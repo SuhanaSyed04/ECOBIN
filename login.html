@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        .signup {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup">
+        <h2>Login Form</h2>
+        <form action="signup.php" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Your username.."><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Your password.."><br><br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+
+</html>

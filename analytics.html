@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Analytics Page</title>
+    <h2>ANALYTICS</h2>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <style>
+        body {
+            background-color: #40ba10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(234, 234, 241);
+            font-size: 80px; /* Increased font size for the heading */
+            margin-top: 0px; /* Adjusted margin for the heading */
+        }
+
+        #myChart {
+            margin-top: 50px;
+            width: 100px; /* Adjusted width for the chart */
+        }
+
+        .iframe-container {
+            display: flex;
+            justify-content:space-evenly;
+            margin-top: 20px; /* Adjusted margin for the container */
+            width: 100%; /* Adjusted width for the container */
+        }
+
+        .iframe-container iframe {
+            width: 25%; /* Adjusted width of the iframes */
+            height: 300px;
+            border: 1px solid #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="myChartContainer">
+        <canvas id="myChart"></canvas>
+    </div>
+    <div class="iframe-container">
+        <iframe src="https://thingspeak.com/channels/2291225/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        <iframe src="https://thingspeak.com/channels/2304985/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+    </div>
+
+</body>
+
+</html>
